@@ -27,7 +27,6 @@
 
 
   <title>CADET: A Modular Platform for Evaluating Distributed Inference and Cooperative Autonomy in Connected Autonomous Vehicles</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -49,89 +48,203 @@
 <body>
 
 
-  <section class="hero">
+  <!-- Hero Section -->
+  <section class="hero is-large hero-white">
     <div class="hero-body">
-      <div class="container is-max-desktop">
+      <div class="container">
         <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">CADET: A Modular Platform for Evaluating Distributed Inference and Cooperative Autonomy in Connected Autonomous Vehicles</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                Anonymous Authors
-                  <!-- <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block"> -->
-                    
-                  </span>
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">ICRA 2025</span>
-                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <!-- span class="link-block">
-                        <a href="https://ieeexplore.ieee.org/document/10356219" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span -->
-
-                        <!-- Supplementary PDF link -->
-                         <!-- <span class="link-block">
-                          <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                          class="external-link button is-normal is-rounded is-dark">
-                          <span class="icon">
-                            <i class="fas fa-file-pdf"></i>
-                          </span>
-                          <span>Supplementary</span>
-                        </a>
-                      </span> -->
-
-                  <!-- <TODO> Github link >
-                  <span class="link-block">
-                    <a href="https://github.com/nesl/Research-PragyaSharma/tree/main/Distributed_Control/Adaptive_Control_Exps/PyBullet" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                    </span-->
-
-                <!-- ArXiv abstract Link -->
-                <!-- <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span> -->
-                </a>
-              </span>
+          <div class="column is-10 has-text-centered">
+            <h1 class="title is-1 hero-title-dark">CADET</h1>
+            <h2 class="subtitle is-3 hero-subtitle-dark">Cooperative Autonomy through Distributed Experimentation Toolkit</h2>
+            <div class="hero-tags">
+              <span class="tag is-primary is-medium">Modular</span>
+              <span class="tag is-primary is-medium">Reproducible</span>
+              <span class="tag is-primary is-medium">Hardware-in-the-Loop</span>
+            </div>
+            <div class="hero-meta">
+              <p class="is-size-5" style="color: #666;">Anonymous Authors &nbsp;•&nbsp; ICRA 2025</p>
+            </div>
+            <div class="hero-buttons">
+              <a href="https://drive.google.com/file/d/1_mv632DviNDyKGGgiP9gPIQR4qSsuWKe/preview" target="_blank" class="button is-primary is-medium is-rounded">
+                <span class="icon">
+                  <i class="fas fa-video"></i>
+                </span>
+                <span>Watch Demo</span>
+              </a>
+              <button class="button is-primary is-medium is-rounded" disabled style="opacity: 0.5; cursor: not-allowed;">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Access Code</span>
+              </button>
+              <a href="ICRA_CADET.pdf" target="_blank" class="button is-primary is-medium is-rounded">
+                <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>Read Paper</span>
+              </a>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar is-fixed-top nav-sticky" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <span class="navbar-item nav-brand">CADET</span>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="#motivation">Overview</a>
+          <a class="navbar-item" href="#comparison">Comparison</a>
+          <a class="navbar-item" href="#architecture">Architecture</a>
+          <a class="navbar-item" href="#netwaggle">NetWaggle</a>
+          <a class="navbar-item" href="#usecases">Evaluation</a>
+          <a class="navbar-item" href="#abstract">Abstract</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<!-- Motivation Section -->
+<section id="motivation" class="section motivation-section">
+  <div class="container">
+    <div class="columns is-multiline is-vcentered">
+      <div class="column is-12 has-text-centered">
+        <h2 class="title is-2 section-title">Motivation</h2>
+        <p class="subtitle is-5">Safety outcomes depend on the joint design of models, placement, and networks</p>
+      </div>
+
+      <div class="column is-12 has-text-centered">
+        <div class="publication-video" style="max-width: 800px; margin: 0 auto 2rem;">
+          <iframe src="https://drive.google.com/file/d/1zvf-io0BlmY-tmMEs0tVVSy0ASG4UNtJ/preview" width="100%" height="480" allow="autoplay" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="column is-4">
+        <div class="challenge-card">
+          <h3 class="title is-4">The Gap</h3>
+          <p>Existing AV platforms remain <strong>monolithic in deployment</strong>, executing entire pipelines on single onboard computers. V2X simulators model networks or modularity, but overlook cooperative autonomy as a <strong>distributed systems problem</strong> requiring compute platform heterogeneity and orchestration.</p>
+        </div>
+      </div>
+
+      <div class="column is-4">
+        <div class="challenge-card">
+          <h3 class="title is-4">CADET's Approach</h3>
+          <p>CADET <strong>disaggregates</strong> the AV stack into composable modules deployable across vehicles, RSUs, edge nodes, and cloud servers. NetWaggle provides <strong>reproducible network emulation</strong> with device heterogeneity, enabling systematic exploration of distributed execution strategies.</p>
+        </div>
+      </div>
+
+      <div class="column is-4">
+        <div class="challenge-card">
+          <h3 class="title is-4">What CADET Enables</h3>
+          <p>CADET allows systematic exploration of deployment topologies (V2V, V2I, cloud, edge) while isolating the impact of network characteristics (latency percentiles, jitter), compute resources (GPU architecture, multi-tenant contention), and model selection (accuracy-latency tradeoffs). Multi-level instrumentation traces causality from design choices to safety outcomes, revealing hidden failure modes invisible in single-tier evaluations.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- Platform Comparison -->
+<section id="comparison" class="section comparison-section">
+  <div class="container">
+    <h2 class="title is-3 has-text-centered">Platform Comparison</h2>
+    <p class="subtitle is-5 has-text-centered">CADET integrates platform heterogeneity, orchestration, system-level metrics, and modularity</p>
+    <div class="table-container">
+      <table class="table is-bordered is-striped is-fullwidth comparison-table">
+        <thead>
+          <tr>
+            <th>Platform</th>
+            <th class="has-text-centered">V2X</th>
+            <th class="has-text-centered">Platform Heterogeneity</th>
+            <th class="has-text-centered">Network Realism</th>
+            <th class="has-text-centered">Orchestration</th>
+            <th class="has-text-centered">System-Level Metrics</th>
+            <th class="has-text-centered">Modularity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Plexe</td>
+            <td class="has-text-centered">●</td>
+            <td class="has-text-centered">○</td>
+            <td class="has-text-centered">●</td>
+            <td class="has-text-centered">○</td>
+            <td class="has-text-centered">○</td>
+            <td class="has-text-centered">●</td>
+          </tr>
+          <tr>
+            <td>Eclipse MOSAIC</td>
+            <td class="has-text-centered">●</td>
+            <td class="has-text-centered">○</td>
+            <td class="has-text-centered">●</td>
+            <td class="has-text-centered">●</td>
+            <td class="has-text-centered">●</td>
+            <td class="has-text-centered">●</td>
+          </tr>
+          <tr>
+            <td>V2XVerse</td>
+            <td class="has-text-centered">●</td>
+            <td class="has-text-centered">○</td>
+            <td class="has-text-centered">●</td>
+            <td class="has-text-centered">○</td>
+            <td class="has-text-centered">○</td>
+            <td class="has-text-centered">●</td>
+          </tr>
+          <tr>
+            <td>OpenCAMS</td>
+            <td class="has-text-centered">●</td>
+            <td class="has-text-centered">○</td>
+            <td class="has-text-centered">●</td>
+            <td class="has-text-centered">●</td>
+            <td class="has-text-centered">○</td>
+            <td class="has-text-centered">●</td>
+          </tr>
+          <tr>
+            <td>OpenCDA</td>
+            <td class="has-text-centered">●</td>
+            <td class="has-text-centered">○</td>
+            <td class="has-text-centered">●</td>
+            <td class="has-text-centered">●</td>
+            <td class="has-text-centered">○</td>
+            <td class="has-text-centered">●</td>
+          </tr>
+          <tr>
+            <td>VaN3Twin</td>
+            <td class="has-text-centered">●</td>
+            <td class="has-text-centered">○</td>
+            <td class="has-text-centered">●</td>
+            <td class="has-text-centered">○</td>
+            <td class="has-text-centered">○</td>
+            <td class="has-text-centered">●</td>
+          </tr>
+          <tr class="cadet-row">
+            <td><strong>CADET [ours]</strong></td>
+            <td class="has-text-centered">●</td>
+            <td class="has-text-centered">●</td>
+            <td class="has-text-centered">●</td>
+            <td class="has-text-centered">●</td>
+            <td class="has-text-centered">●</td>
+            <td class="has-text-centered">●</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
 <!-- Paper abstract -->
-<section class="section hero is-light">
+<section id="abstract" class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Deep learning models are increasingly central to autonomous vehicle (AV) pipelines, yet their integration has traditionally followed a monolithic design where perception, planning, and control execute on a single onboard computer. This design overlooks the emerging paradigm of cooperative autonomy, where vehicles interact with roadside units (RSUs), edge servers, and cloud-hosted intelligence through vehicle-to-everything (V2X) connectivity. Cooperative perception and control improve safety and efficiency, but also introduce systems-level challenges: network latency, compute heterogeneity, and multi-tenant contention, all critically affect real-time decision-making. These challenges are further amplified by the increasing reliance on large foundation models, whose scale necessitates cloud deployment. We present CADET (Cooperative Autonomy through Distributed Experimentation Toolkit), a modular platform for systematic and reproducible evaluation of distributed cooperative autonomy systems under realistic deployment conditions. CADET decouples the AV stack into composable modules that can be flexibly deployed across vehicles, infrastructure, and edge/cloud tiers. The framework integrates state-of-the-art models, incorporates realistic network and workload emulation, and provides synchronized model-, system-, and task-level instrumentation. Through V2V and V2I experiments, we show that distributed deployment choices fundamentally shape safety, with V2V intent packets outperforming cloud-based perception and RSU-assisted perception sustaining safety until overloaded by concurrent requests. Although designed for AV pipelines, CADET also supports dataset-driven experimentation, enabling systems and ML researchers to benchmark distributed inference workloads independently of full vehicle simulation. CADET is open source, with code and demo available at 
+            Deep learning models are increasingly central to autonomous vehicle (AV) pipelines, yet their integration has traditionally followed a monolithic design where perception, planning, and control execute on a single onboard computer. This design overlooks the emerging paradigm of cooperative autonomy, where vehicles interact with roadside units (RSUs), edge servers, and cloud-hosted intelligence through vehicle-to-everything (V2X) connectivity. Cooperative perception and control improve safety and efficiency, but also introduce systems-level challenges: network latency, compute heterogeneity, and multi-tenant contention, all critically affect real-time decision-making. These challenges are further amplified by the increasing reliance on large foundation models, whose scale necessitates cloud deployment. We present CADET (Cooperative Autonomy through Distributed Experimentation Toolkit), a modular platform for systematic and reproducible evaluation of distributed cooperative autonomy systems under realistic deployment conditions. CADET decouples the AV stack into composable modules that can be flexibly deployed across vehicles, infrastructure, and edge/cloud tiers. The framework integrates state-of-the-art models, incorporates realistic network and workload emulation, and provides synchronized model-, system-, and task-level instrumentation. Through V2V and V2I experiments, we show that distributed deployment choices fundamentally shape safety, with V2V intent packets outperforming cloud-based perception and RSU-assisted perception sustaining safety until overloaded by concurrent requests. Although designed for AV pipelines, CADET also supports dataset-driven experimentation, enabling systems and ML researchers to benchmark distributed inference workloads independently of full vehicle simulation. CADET is open source, with code and demo available at <a href="https://anonymous.4open.science/w/cadet-site-C823/" target="_blank">https://anonymous.4open.science/w/cadet-site-C823/</a>.
           </p>
         </div>
       </div>
@@ -140,82 +253,290 @@
 </section>
 <!-- End paper abstract -->
 
-  <section class="section hero is-small">
+<!-- Key Capabilities -->
+<section class="section hero is-small">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-full">
-        <!-- h2 class="title is-3">Delays in Sense-Act Systems</h2>
-        <!-- div class="content has-text-justified">
+        <h2 class="title is-3">Platform Capabilities</h2>
+        <div class="content has-text-justified">
+          <div class="columns is-multiline">
+            <div class="column is-half">
+              <h3 class="title is-5">Modular Pipeline Architecture</h3>
+              <p>AV pipeline decomposed into Perception and Cognition stages with independently configurable sub-stages. Supports flexible deployment of state-of-the-art models (YOLO, MPC) and cooperation protocols across vehicle, RSU, edge, and cloud.</p>
+            </div>
+            <div class="column is-half">
+              <h3 class="title is-5">NetWaggle: Network Emulation</h3>
+              <p>Mininet-based network layer injects realistic V2X delay distributions, jitter patterns, packet loss rates, and bandwidth caps matching measured 4G-LTE, 5G-NR, DSRC, or Wi-Fi traces. Low overhead (&lt;10ms) ensures repeatability.</p>
+            </div>
+            <div class="column is-half">
+              <h3 class="title is-5">Device Heterogeneity</h3>
+              <p>Client-server architecture supports deployment across embedded vehicle devices, GPU-equipped RSUs, and cloud servers. Asynchronous execution mode mimics real-world V2X timing behavior. Hardware-in-the-loop testing enabled.</p>
+            </div>
+            <div class="column is-half">
+              <h3 class="title is-5">Multi-Source Data Integration</h3>
+              <p>CARLA Simulator with Scenario Runner for configurable V2X scenarios. Dataset Mode for deterministic replay on Waymo, Argoverse, COCO, VQA2. Live Sensor support for physical hardware integration.</p>
+            </div>
+            <div class="column is-half">
+              <h3 class="title is-5">Orchestration and Batch Execution</h3>
+              <p>Single YAML configuration file specifies scenario parameters, model variants, deployment mappings, and network traces. SSH-based remote deployment. Systematic sweeps over vehicle density, delay profiles, or workloads.</p>
+            </div>
+            <div class="column is-half">
+              <h3 class="title is-5">Multi-Level Instrumentation</h3>
+              <p>Synchronized metrics across model-level (mAP, inference latency), system-level (CPU/GPU utilization, memory, energy), and task-level (time-to-collision, braking efficiency). Timestamped logs with NTP synchronization.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- System Architecture -->
+<section id="architecture" class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">CADET Architecture</h2>
+        <div class="content has-text-justified">
           <p>
-          Each module within the closed-loop Sense-Act system introduces its own computational delay (<em>d<sub>1</sub></em>, <em>d<sub>2</sub></em>, and <em>d<sub>3</sub></em>), collectively influencing the overall application performance by shaping the accuracy-latency trade-off. Typically, system designs accommodate these delays by adopting a worst-case approach, where sensing and actuation are scheduled at fixed intervals that exceed the cumulative worst-case delays of <em>d<sub>1</sub></em>, <em>d<sub>2</sub></em>, and <em>d<sub>3</sub></em>. Alternatively, some systems adopt hybrid configurations, wherein sensing occurs at predetermined intervals while actuation is triggered as soon as the corresponding action is computed. This interplay between module-specific delays and the timing configurations for sensing and actuation has a significant impact on application performance, influencing both responsiveness and accuracy.
+            CADET implements a four-layer architecture that establishes clear abstraction boundaries while maintaining flexibility for diverse cooperative autonomy research scenarios.
           </p>
-          <figure>
-        <img src="static/images/Figure1.png" alt="intro", style="max-width:75%; height:auto;">
-        <figcaption>Visualization of closed-loop Sense-Act Systems with module delays <em>d<sub>1</sub></em> , <em>d<sub>2</sub></em> , and <em>d<sub>3</sub></em> .</figcaption>
-        </figure>
-      </div -->
+          <figure class="has-text-centered">
+            <img src="static/images/cadet-architecture.png" alt="CADET System Architecture" style="width:90%; height:auto; margin: 0 auto;">
+            <figcaption>CADET implements a modular four-layer architecture allowing components to be evaluated in isolation or integrated for end-to-end cooperative autonomy experiments.</figcaption>
+          </figure>
+          <p style="margin-top: 1.5rem;">
+            The <strong>Data Source Layer</strong> provides scenario generation via CARLA Simulator, dataset-driven evaluation, and live sensor integration. The <strong>Processing Core</strong> decomposes the AV pipeline into Perception and Cognition stages, each with independently configurable sub-stages deployable across the computational continuum. <strong>NetWaggle</strong> combines device heterogeneity with reproducible network emulation, supporting deployment from embedded vehicle-like devices to GPU-equipped RSUs and cloud servers. The <strong>Analysis Layer</strong> provides unified orchestration, synchronized multi-level instrumentation (model, system, task), and foundation model interfaces.
+          </p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-  <section class="section hero is-light">
+<!-- NetWaggle Section -->
+<section id="netwaggle" class="section hero is-small">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-full">
-        <!-- h2 class="title is-3">System Design</h2>
-        <!-- div class="content has-text-justified">
-          <p>
-          To demonstrate the placement of control in a distributed setting, we consider two execution locations for the control algorithm: local and cloud. Local control refers to an on-device controller, directly connected to the device's sensors via a low-latency link but constrained by limited computational resources due to its deployment on a resource-limited platform. In contrast, cloud control represents a remote controller equipped with significantly greater computational capabilities but connected to the device through a high-latency network link.
-        </p>
-          <p>
-          This architecture is implemented for a Vehicle Following application using a simulated F1/10 racecar  and its environment in the Pybullet simulator. The simulation runs on a MacBook Pro and is connected to the local controller, a Raspberry Pi 4B, via Ethernet, collectively representing the vehicular network. The cloud controller, hosted on an Amazon AWS EC2 (N. California) instance, communicates with the vehicular network over Wi-Fi. This setup provides a representative framework to evaluate the trade-offs between low-latency local control and high-computation cloud-based control in distributed control systems.
-        </p>
-          <figure>
-        <img src="static/images/Figure2.png" alt="intro", style="max-width:70%; height:auto;">
-        <figcaption>System Setup with Local and Cloud control locations.</figcaption>
-        </figure>
-      </div -->
+        <h2 class="title is-3">NetWaggle: Standalone or Integrated</h2>
+        <div class="content">
+          <p class="subtitle is-6 has-text-centered" style="margin-bottom: 2rem;">
+            CADET components can be used <strong>together as an end-to-end platform</strong> or <strong>individually for targeted research</strong>. NetWaggle, CADET's network emulation layer, is available as a standalone tool for distributed systems research beyond autonomous vehicles.
+          </p>
+
+          <div class="columns is-vcentered">
+            <div class="column is-6">
+              <div class="box" style="height: 100%;">
+                <h3 class="title is-5">Standalone NetWaggle Use</h3>
+                <ul style="text-align: left; margin-left: 1rem;">
+                  <li><strong>Network researchers</strong> can evaluate protocols under realistic V2X conditions without AV simulation</li>
+                  <li><strong>Systems researchers</strong> can benchmark distributed inference across heterogeneous devices</li>
+                  <li><strong>ML researchers</strong> can study model behavior under network-induced delays and jitter</li>
+                </ul>
+                <h3 class="title is-5" style="margin-top: 1.5rem;">Integrated CADET Use</h3>
+                <p style="text-align: left;">NetWaggle seamlessly integrates with CADET's Processing Core and Data Sources to enable end-to-end cooperative autonomy experiments with synchronized multi-level instrumentation.</p>
+              </div>
+            </div>
+            <div class="column is-6">
+              <figure>
+                <img src="static/images/netwaggle-deployment.png" alt="NetWaggle Architecture" style="width:100%; height:auto;">
+                <figcaption>NetWaggle network emulation with device heterogeneity across cloud, edge, and embedded platforms.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-  <section class="section hero is-small">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-full">
-        <!-- h2 class="title is-3">Evaluation Results</h2>
-        <!-- div class="content has-text-justified">
-          <h3 class="title is-4">Controller Performance</h3>
-          <div class="content has-text-justified">
-          <figure>
-        <img src="static/images/Figure3.png" alt="math", style="max-width:100%; height:auto;">
-        <figcaption>Application performance of PID and MPC controllers with Local and Cloud deployment under various actuation deadlines. While Local PID finishes faster than Cloud MPC, the latter has lower trajectory tracking error (denoted by bar labels).</figcaption>
-        </figure>
+<!-- Use Cases Section with Tabs -->
+<section id="usecases" class="section usecases-section">
+  <div class="container">
+    <h2 class="title is-2 has-text-centered">Evaluation</h2>
+    <p class="subtitle is-5 has-text-centered">Distributed deployment choices fundamentally shape cooperative autonomy safety outcomes</p>
+
+    <div class="tabs is-centered is-boxed is-large">
+      <ul>
+        <li class="is-active" data-tab="v2v">
+          <a>
+            <span class="icon is-small"><i class="fas fa-car" aria-hidden="true"></i></span>
+            <span>V2V Cooperative Braking</span>
+          </a>
+        </li>
+        <li data-tab="v2i">
+          <a>
+            <span class="icon is-small"><i class="fas fa-broadcast-tower" aria-hidden="true"></i></span>
+            <span>V2I RSU-Assisted Perception</span>
+          </a>
+        </li>
+        <li data-tab="vlm">
+          <a>
+            <span class="icon is-small"><i class="fas fa-brain" aria-hidden="true"></i></span>
+            <span>Foundation Models</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="tab-content">
+      <!-- V2V Tab -->
+      <div class="tab-pane is-active" id="v2v">
+        <div class="columns is-vcentered">
+          <div class="column is-6">
+            <div class="publication-video">
+              <iframe src="https://drive.google.com/file/d/1NIHUo6EM4CGatJa2vK9nnVsABBZhGGNu/preview" width="100%" height="480" allow="autoplay" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="column is-6">
+            <h3 class="title is-4">V2V Cooperative Braking</h3>
+            <p class="content">
+              Two-vehicle platoon scenario where the leader executes emergency braking and the follower must maintain safe inter-vehicle distance. Safety threshold set to 10m (approximately two car lengths). We compare V2V intent communication (DSRC, 20ms baseline, 50ms tail) against cloud-hosted YOLO11x perception (5G, 30ms baseline, 100ms tail).
+            </p>
+            <div class="result-highlight">
+              <p><strong>Result:</strong> V2V intent packets remain collision-free across all delay profiles. Cloud perception fails at p90 and p99 due to compounding delays (30-50ms inference + 100ms tail latency). Larger models impose higher energy costs (up to 1.66J per inference) without improving safety under adverse network conditions.</p>
+            </div>
+            <div class="columns">
+              <div class="column is-7">
+                <figure>
+                  <img src="static/images/v2v-gap-analysis.png" alt="V2V Gap Analysis" style="width:100%; height:auto;">
+                  <figcaption>Leader-follower gap over time at different speeds under perception-only and V2V-based braking. Safety violation occurs when gap ≤10m.</figcaption>
+                </figure>
+              </div>
+              <div class="column is-5">
+                <h4 class="title is-6">Collision Outcomes Across Network Delay Profiles</h4>
+                <div class="table-container">
+                  <table class="table is-bordered is-narrow is-fullwidth collision-table">
+                    <thead>
+                      <tr>
+                        <th>Policy</th>
+                        <th>Model</th>
+                        <th>Energy (J)</th>
+                        <th>p50</th>
+                        <th>p80</th>
+                        <th>p90</th>
+                        <th>p99</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td rowspan="1" class="v2v-row"><strong>V2V</strong></td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td class="safe-cell">✓</td>
+                        <td class="safe-cell">✓</td>
+                        <td class="safe-cell">✓</td>
+                        <td class="safe-cell">✓</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="5" class="perception-row"><strong>Perception<br>(Cloud)</strong></td>
+                        <td>YOLO11n</td>
+                        <td>0.73</td>
+                        <td class="safe-cell">✓</td>
+                        <td class="safe-cell">✓</td>
+                        <td class="unsafe-cell">✗</td>
+                        <td class="unsafe-cell">✗</td>
+                      </tr>
+                      <tr>
+                        <td>YOLO11s</td>
+                        <td>0.76</td>
+                        <td class="safe-cell">✓</td>
+                        <td class="safe-cell">✓</td>
+                        <td class="unsafe-cell">✗</td>
+                        <td class="unsafe-cell">✗</td>
+                      </tr>
+                      <tr>
+                        <td>YOLO11m</td>
+                        <td>0.92</td>
+                        <td class="safe-cell">✓</td>
+                        <td class="safe-cell">✓</td>
+                        <td class="unsafe-cell">✗</td>
+                        <td class="unsafe-cell">✗</td>
+                      </tr>
+                      <tr>
+                        <td>YOLO11l</td>
+                        <td>1.27</td>
+                        <td class="safe-cell">✓</td>
+                        <td class="safe-cell">✓</td>
+                        <td class="unsafe-cell">✗</td>
+                        <td class="unsafe-cell">✗</td>
+                      </tr>
+                      <tr>
+                        <td>YOLO11x</td>
+                        <td>1.66</td>
+                        <td class="safe-cell">✓</td>
+                        <td class="safe-cell">✓</td>
+                        <td class="unsafe-cell">✗</td>
+                        <td class="unsafe-cell">✗</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="is-size-7" style="margin-top: 0.5rem;"><strong>✓</strong> No Collision &nbsp; <strong>✗</strong> Collision</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <h3 class="title is-4">Adaptive Control Placement (ACP)</h3>
-        <div class="content has-text-justified">
-        <figure>
-        <img src="static/images/Figure4.png" alt="math", style="max-width:70%; height:auto;">
-        <figcaption>Distributed architecture of Adaptive Control Placement strategy.</figcaption>
-        </figure>
-        <p>
-          Our findings indicate that the optimal performance is achieved by deploying PID on-device and MPC in the cloud. Building on this insight, we design a distributed system employing an Adaptive Control Placement (ACP) strategy, illustrated above. In this framework, the computationally intensive MPC is hosted on the high-latency but faster cloud platform, while the simpler PID controller resides on the low-latency, resource-constrained local device. While MPC is preferred for its higher accuracy, the system seamlessly switches to PID during periods of elevated network latency, ensuring continuous and reliable control.
-        </p>
+      </div>
+
+      <!-- V2I Tab -->
+      <div class="tab-pane" id="v2i">
+        <div class="columns is-vcentered">
+          <div class="column is-6">
+            <div class="publication-video">
+              <iframe src="https://drive.google.com/file/d/1NIHUo6EM4CGatJa2vK9nnVsABBZhGGNu/preview" width="100%" height="480" allow="autoplay" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="column is-6">
+            <h3 class="title is-4">V2I-Assisted Braking</h3>
+            <p class="content">
+              Ego vehicle travels at 20mph when a pedestrian emerges from behind an occluding truck. Safety margin defined as the difference between time-to-collision (TTC) and time-to-event (TTE). We evaluate four configurations: onboard perception, cloud-hosted perception, RSU-local V2I, and RSU-cloud V2I under varying visibility conditions and concurrent client loads.
+            </p>
+            <div class="result-highlight">
+              <p><strong>Result:</strong> Perception-only policies achieve sufficient safety margins under clear visibility but deteriorate rapidly as conditions worsen. RSU-local and RSU-cloud V2I maintain positive margins across all visibility settings. RSU inference latency exceeds 100ms with 5-10 extra clients. Cloud p99 latencies exceed 200ms with 10 clients due to queuing under concurrent load.</p>
+            </div>
+            <div class="columns">
+              <div class="column is-6">
+                <figure>
+                  <img src="static/images/latency-violin-plot.png" alt="V2I Latency" style="width:100%; height:auto;">
+                  <figcaption>End-to-end latency distribution under increasing concurrent load (0, 5, 10 extra vehicles) for PC and RSU deployments.</figcaption>
+                </figure>
+              </div>
+              <div class="column is-6">
+                <figure>
+                  <img src="static/images/v2i-safety-boxplot.png" alt="Safety Analysis" style="width:100%; height:auto;">
+                  <figcaption>Safety margin (TTC-TTE) across visibility conditions. Positive values indicate safe operation.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
         </div>
-        <h3 class="title is-4">ACP Performance</h3>
-        <div class="content has-text-justified">
-        <figure>
-        <img src="static/images/Figure5.png" alt="math", style="max-width:70%; height:auto;">
-        <figcaption>Application Performance of Adaptive Control Placement strategy. ACP outperforms Local PID and Cloud MPC in terms of time-to-complete. Tracking error of ACP (denoted by bar labels) lies in between that of PID and MPC.</figcaption>
-        </figure>
+      </div>
+
+      <!-- VLM Tab -->
+      <div class="tab-pane" id="vlm">
+        <div class="columns is-centered">
+          <div class="column is-10">
+            <h3 class="title is-4">Dataset Mode with Foundation Models</h3>
+            <p class="content">
+              CADET's dataset mode enables evaluation of vision-language models independently of full vehicle simulation. We evaluate ten VLMs across three GPU servers (NVIDIA A6000, A100, A16) using the VQA2 dataset as a proxy for cooperative autonomy scenarios where sensor data is queried in natural language.
+            </p>
+            <div class="result-highlight">
+              <p><strong>Result:</strong> Inference latencies exceed 200ms even for smaller models, far beyond the deadlines of safety-critical coordination. 13B-scale models require >25GB GPU memory and deliver throughput below 10 tokens/s, while 3B-7B models sustain >12 tokens/s with manageable memory footprints. Although semantic queries are promising for higher-level coordination, current models are too slow and resource-intensive for low-level safety decisions.</p>
+            </div>
+            <figure class="has-text-centered">
+              <img src="static/images/accuracy-latency-plot.png" alt="VLM Accuracy-Latency" style="width:80%; height:auto; margin: 0 auto;">
+              <figcaption>Accuracy-latency tradeoffs for VLMs across heterogeneous GPU servers (A6000, A100, A16). Models and devices exhibit significant variation in the accuracy-latency tradeoff space.</figcaption>
+            </figure>
+          </div>
         </div>
-      </div -->
       </div>
     </div>
   </div>
 </section>
+
 
 <!-- Paper poster -->
 <!-- <section class="hero is-small is-light">
@@ -225,7 +546,7 @@
 
       <img  src="static/pdfs/poster.png" alt="Poster", style="max-width:100%; height:auto;">
           </img>
-        
+
       </div>
     </div>
   </section> -->
