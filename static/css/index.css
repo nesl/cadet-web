@@ -344,14 +344,18 @@ body {
 .publication-video {
     position: relative;
     width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
     overflow: hidden;
     border-radius: 10px !important;
 }
 
 .publication-video iframe,
 .publication-video video {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
 }
 
