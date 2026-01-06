@@ -348,11 +348,15 @@ body {
     border-radius: 10px !important;
 }
 
-.publication-video iframe,
+.publication-video iframe {
+    width: 100%;
+    min-height: 400px;
+    display: block;
+}
+
 .publication-video video {
     width: 100%;
     height: auto;
-    aspect-ratio: 16 / 9;
     display: block;
 }
 
