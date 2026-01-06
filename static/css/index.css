@@ -348,12 +348,7 @@ body {
     border-radius: 10px !important;
 }
 
-.publication-video iframe {
-    width: 100%;
-    min-height: 400px;
-    display: block;
-}
-
+.publication-video iframe,
 .publication-video video {
     width: 100%;
     height: auto;
