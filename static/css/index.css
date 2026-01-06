@@ -350,7 +350,7 @@ body {
 }
 
 .publication-video.coop-video {
-    padding-bottom: 71.15%; /* 1518x1080 aspect ratio */
+    padding-bottom: 35.58%; /* Half of 1518x1080 aspect ratio */
 }
 
 .publication-video iframe,
