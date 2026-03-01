@@ -1,5 +1,5 @@
 # Website Link
-https://nesl.github.io/cadet-site/
+https://nesl.github.io/cadet-web/
 
 
 ## Acknowledgments
