@@ -71,12 +71,18 @@
                 </span>
                 <span>Watch Demo</span>
               </a>
-              <button class="button is-primary is-medium is-rounded" disabled style="opacity: 0.5; cursor: not-allowed;">
+              <a href="https://github.com/nesl/cadet" target="_blank" class="button is-primary is-medium is-rounded">
                 <span class="icon">
                   <i class="fab fa-github"></i>
                 </span>
                 <span>Access Code</span>
-              </button>
+              </a>
+              <a href="https://nesl.github.io/cadet/" target="_blank" class="button is-primary is-medium is-rounded">
+                <span class="icon">
+                  <i class="fas fa-book"></i>
+                </span>
+                <span>Documentation</span>
+              </a>
               <a href="ICRA_CADET.pdf" target="_blank" class="button is-primary is-medium is-rounded">
                 <span class="icon">
                   <i class="fas fa-file-pdf"></i>
@@ -244,7 +250,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Deep learning models are increasingly central to autonomous vehicle (AV) pipelines, yet their integration has traditionally followed a monolithic design where perception, planning, and control execute on a single onboard computer. This design overlooks the emerging paradigm of cooperative autonomy, where vehicles interact with roadside units (RSUs), edge servers, and cloud-hosted intelligence through vehicle-to-everything (V2X) connectivity. Cooperative perception and control improve safety and efficiency, but also introduce systems-level challenges: network latency, compute heterogeneity, and multi-tenant contention, all critically affect real-time decision-making. These challenges are further amplified by the increasing reliance on large foundation models, whose scale necessitates cloud deployment. We present CADET (Cooperative Autonomy through Distributed Experimentation Toolkit), a modular platform for systematic and reproducible evaluation of distributed cooperative autonomy systems under realistic deployment conditions. CADET decouples the AV stack into composable modules that can be flexibly deployed across vehicles, infrastructure, and edge/cloud tiers. The framework integrates state-of-the-art models, incorporates realistic network and workload emulation, and provides synchronized model-, system-, and task-level instrumentation. Through V2V and V2I experiments, we show that distributed deployment choices fundamentally shape safety, with V2V intent packets outperforming cloud-based perception and RSU-assisted perception sustaining safety until overloaded by concurrent requests. Although designed for AV pipelines, CADET also supports dataset-driven experimentation, enabling systems and ML researchers to benchmark distributed inference workloads independently of full vehicle simulation. CADET is open source, with code and demo available at <a href="https://anonymous.4open.science/w/cadet-site-C823/" target="_blank">https://anonymous.4open.science/w/cadet-site-C823/</a>.
+            Deep learning models are increasingly central to autonomous vehicle (AV) pipelines, yet their integration has traditionally followed a monolithic design where perception, planning, and control execute on a single onboard computer. This design overlooks the emerging paradigm of cooperative autonomy, where vehicles interact with roadside units (RSUs), edge servers, and cloud-hosted intelligence through vehicle-to-everything (V2X) connectivity. Cooperative perception and control improve safety and efficiency, but also introduce systems-level challenges: network latency, compute heterogeneity, and multi-tenant contention, all critically affect real-time decision-making. These challenges are further amplified by the increasing reliance on large foundation models, whose scale necessitates cloud deployment. We present CADET (Cooperative Autonomy through Distributed Experimentation Toolkit), a modular platform for systematic and reproducible evaluation of distributed cooperative autonomy systems under realistic deployment conditions. CADET decouples the AV stack into composable modules that can be flexibly deployed across vehicles, infrastructure, and edge/cloud tiers. The framework integrates state-of-the-art models, incorporates realistic network and workload emulation, and provides synchronized model-, system-, and task-level instrumentation. Through V2V and V2I experiments, we show that distributed deployment choices fundamentally shape safety, with V2V intent packets outperforming cloud-based perception and RSU-assisted perception sustaining safety until overloaded by concurrent requests. Although designed for AV pipelines, CADET also supports dataset-driven experimentation, enabling systems and ML researchers to benchmark distributed inference workloads independently of full vehicle simulation. CADET is open source, with the code at <a href="https://github.com/nesl/cadet" target="_blank">github.com/nesl/cadet</a> and the documentation at <a href="https://nesl.github.io/cadet/" target="_blank">nesl.github.io/cadet</a>.
           </p>
         </div>
       </div>
